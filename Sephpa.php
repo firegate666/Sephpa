@@ -24,13 +24,13 @@ date_default_timezone_set(@date_default_timezone_get());
 class SephpaInputException extends Exception {}
 
 // credit transfers < separator
-const SEPA_PAIN_001_002_03 = 100203;
-const SEPA_PAIN_001_003_03 = 100303;
+define('SEPA_PAIN_001_002_03', 100203);
+define('SEPA_PAIN_001_003_03', 100303);
 // Separator is greater then credit transfer and lower than direct debit
-const SEPA_RATOR           = 800000;
+define('SEPA_RATOR',           800000);
 // direct debits > separator
-const SEPA_PAIN_008_002_02 = 800202;
-const SEPA_PAIN_008_003_02 = 800302;
+define('SEPA_PAIN_008_002_02', 800202);
+define('SEPA_PAIN_008_003_02', 800302);
 
 
 /**
